@@ -37,6 +37,10 @@ header .topnav ul li {
   font-size: 1.5rem;
 }
 
+header .topnav ul li:last-child{
+  margin-right: 0;
+}
+
 header .topnav li:hover {
   color: black;
   cursor: pointer;
@@ -67,6 +71,7 @@ main .title {
 }
 
 main p {
+  width: 80%;
   text-align: justify;
   font-size: 1.1rem;
   margin-block: 3rem;
@@ -101,6 +106,9 @@ main button:hover {
 }
 
 @media screen and (max-width: 750px) {
+  main p {
+    width: 100%;
+  }
   header .topnav ul li {
     margin-inline: 0;
   }
@@ -121,7 +129,6 @@ main button:hover {
 
   .topnav.responsive ul li:first-child {
     padding-bottom: 1rem;
-    transform: translateX(2rem);
   }
 
   .topnav.responsive ul li:not(:first-child) {
