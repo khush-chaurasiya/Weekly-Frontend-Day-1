@@ -30,7 +30,7 @@ header .topnav ul {
 }
 
 header .topnav ul li {
-  width: 10rem;
+  margin-inline: 2rem;
   text-align: right;
   text-transform: capitalize;
   list-style: none;
@@ -101,6 +101,9 @@ main button:hover {
 }
 
 @media screen and (max-width: 750px) {
+  header .topnav ul li {
+    margin-inline: 0;
+  }
   main h1 {
     font-size: 2rem;
   }
